@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FIESTA DE LA ANTIOQUEÑIDAD INEM 2025 - MUNICIPIO DE LA PINTADA</title>
+  <meta name="description" content="Micrositio cultural del municipio de La Pintada (Antioquia) para la Fiesta de la Antioqueñidad INEM 2025: historia, ubicación, demografía, platos típicos, turismo y datos curiosos." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --green:#1f8a5b;   /* Verde bandera Antioquia */
+      --green-2:#2aa66c; /* Verde claro */
+      --white:#ffffff;   /* Blanco bandera Antioquia */
+      --coffee:#6b4f3f;  /* Café (tierra/café) */
+      --sky:#5bb8ff;     /* Azul cielo Cauca */
+      --text:#1e2a27;    /* Texto principal */
+      --bg:#f6faf7;      /* Fondo suave */
+      --shadow:0 10px 25px rgba(0,0,0,.08);
+      --radius:20px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu; color:var(--text); background:var(--bg)}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+
+    /* Header / Hero */
+    header{
+      position:relative;overflow:hidden;color:#fff;text-align:center;
+      background:linear-gradient(135deg, rgba(31,138,91,.95), rgba(42,166,108,.85)), url('assets/la-pintada-hero.jpg') center/cover no-repeat;
+    }
+    .hero{padding:96px 20px}
+    .badge{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.35);padding:6px 12px;border-radius:999px;font-size:12px;letter-spacing:.6px}
+    h1{font-size:clamp(28px,5vw,44px);margin:16px 0 10px;line-height:1.1}
+    .subtitle{max-width:900px;margin:0 auto;font-weight:300}
+    .cta{
+      margin-top:26px;display:inline-flex;gap:10px;align-items:center;
+      background:#fff;color:var(--green);padding:12px 18px;border-radius:999px;font-weight:600;box-shadow:var(--shadow)
+    }
+    .nav{position:sticky;top:0;background:#fff;border-bottom:1px solid #e8f1ec;z-index:20}
+    .nav-inner{max-width:1100px;margin:0 auto;display:flex;gap:14px;flex-wrap:wrap;align-items:center;justify-content:center;padding:10px}
+    .nav a{padding:8px 14px;border-radius:999px}
+    .nav a:hover{background:#eaf6ef}
+
+    /* Sections */
+    section{max-width:1100px;margin:48px auto;padding:0 20px}
+    .grid{display:grid;gap:22px}
+    @media(min-width:900px){.grid-2{grid-template-columns:1.1fr .9fr}}
+    .card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+    .card .content{padding:22px}
+    h2{font-size:clamp(22px,3.4vw,30px);margin:0 0 10px}
+    .kicker{color:var(--green);font-weight:700;text-transform:uppercase;letter-spacing:.8px;font-size:12px}
+
+    /* Lists */
+    ul{margin:12px 0 0 18px}
+    li{margin:6px 0}
+
+    /* Gallery */
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;padding:12px}
+    .gallery img{border-radius:14px; aspect-ratio:4/3; object-fit:cover}
+
+    /* Footer */
+    footer{margin-top:64px;background:#0e3f2b;color:#eafff3}
+    .footer-inner{max-width:1100px;margin:0 auto;padding:26px 20px;display:grid;gap:12px}
+    .foot-grid{display:grid;grid-template-columns:1fr;gap:14px}
+    @media(min-width:800px){.foot-grid{grid-template-columns:1.3fr .7fr}}
+    .chip{display:inline-block;padding:6px 10px;border:1px solid rgba(255,255,255,.25);border-radius:10px;margin:4px 6px 0 0;font-size:12px}
+
+    /* Accent band */
+    .band{height:8px;background:linear-gradient(90deg,var(--green),var(--white),var(--green-2));}
+
+    /* Buttons */
+    .btn{display:inline-block;background:var(--green);color:#fff;padding:10px 14px;border-radius:12px;font-weight:600;box-shadow:var(--shadow)}
+    .btn:hover{filter:brightness(1.05)}
+
+    /* Table */
+    table{width:100%;border-collapse:collapse;font-size:14px}
+    th,td{padding:10px;border-bottom:1px solid #eef3f0;text-align:left}
+    th{background:#f2fbf6}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <span class="badge">CULTURA • IDENTIDAD • TRADICIÓN</span>
+      <h1>FIESTA DE LA ANTIOQUEÑIDAD INEM 2025<br> MUNICIPIO DE LA PINTADA</h1>
+      <p class="subtitle">Entre montañas y el río Cauca, <strong>La Pintada</strong> guarda el espíritu arriero, el sabor paisa y paisajes que invitan al descanso. Este micrositio reúne ubicación, demografía, historia, gastronomía, turismo y datos curiosos.</p>
+      <a href="#ubicacion" class="cta">Explorar el municipio ↓</a>
+    </div>
+    <div class="band" aria-hidden="true"></div>
+  </header>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#ubicacion">Ubicación</a>
+      <a href="#demografia">Demografía</a>
+      <a href="#historia">Historia & Personajes</a>
+      <a href="#platos">Platos típicos</a>
+      <a href="#turismo">Turismo</a>
+      <a href="#datos">Datos curiosos</a>
+      <a href="#galeria">Galería</a>
+    </div>
+  </nav>
+
+  <section id="ubicacion" class="grid grid-2">
+    <div class="card">
+      <div class="content">
+        <span class="kicker">Ubicación</span>
+        <h2>¿Dónde queda La Pintada?</h2>
+        <p><strong>La Pintada</strong> está en el <em>Suroeste de Antioquia</em>, a orillas del río Cauca y sobre la Troncal que conecta Medellín con el Eje Cafetero y el Valle del Cauca. Su clima es cálido y su paisaje mezcla valle y montaña.</p>
+        <p><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps?q=La+Pintada+Antioquia">Abrir en Google Maps</a></p>
+      </div>
+    </div>
+    <div class="card" aria-label="Mapa de La Pintada">
+      <iframe title="Mapa La Pintada" src="https://www.google.com/maps?q=La+Pintada+Antioquia&output=embed" width="100%" height="360" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <section id="demografia" class="grid">
+    <div class="card">
+      <div class="content">
+        <span class="kicker">Demografía</span>
+        <h2>Gente y entorno</h2>
+        <p>Municipio de vocación de servicios, comercio y turismo de paso. La población se concentra en la cabecera municipal y en veredas ribereñas. En temporada alta aumenta el flujo de visitantes por su ubicación estratégica.</p>
+        <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
+          <div class="card"><div class="content"><strong>Altitud</strong><br><span>~ 600 m s. n. m.</span></div></div>
+          <div class="card"><div class="content"><strong>Clima</strong><br><span>Cálido — tropical de valle</span></div></div>
+          <div class="card"><div class="content"><strong>Economía</strong><br><span>Comercio, turismo, transporte, agricultura</span></div></div>
+          <div class="card"><div class="content"><strong>Gentilicio</strong><br><span>Pintadeños(as)</span></div></div>
+        </div>
+        <p style="font-size:12px;opacity:.8;margin-top:8px">*Cifras referenciales para fines educativos del micrositio.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="historia" class="grid grid-2">
+    <div class="card">
+      <div class="content">
+        <span class="kicker">Historia</span>
+        <h2>Origen y desarrollo</h2>
+        <p>La Pintada ha sido tradicionalmente un <strong>punto de cruce sobre el río Cauca</strong> y un paso clave entre regiones. Con la expansión vial y ferroviaria del siglo XX, creció como centro de descanso y comercio para viajeros y arrieros.</p>
+        <p>Su identidad se nutre del <em>espíritu paisa</em>: trabajo, verraquera y hospitalidad, valores celebrados en la Fiesta de la Antioqueñidad.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <span class="kicker">Personajes y memoria</span>
+        <h2>Huella cultural</h2>
+        <ul>
+          <li><strong>Arrieros y pescadores del Cauca</strong>: oficios emblemáticos que forjaron el carácter local.</li>
+          <li><strong>Constructores de caminos y puentes</strong>: infraestructura que conectó el suroeste con Antioquia y el Pacífico.</li>
+          <li><strong>Tradición oral</strong>: relatos de viajeros, balnearios y crecientes del río que marcan la memoria colectiva.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="platos" class="grid">
+    <div class="card">
+      <div class="content">
+        <span class="kicker">Gastronomía</span>
+        <h2>Platos típicos para antojarse</h2>
+        <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px">
+          <div class="card"><div class="content">
+            <h3>Bandeja paisa</h3>
+            <p>Icono antioqueño con fríjoles, arroz, carne molida, chicharrón, huevo, tajadas, arepa y aguacate.</p>
+          </div></div>
+          <div class="card"><div class="content">
+            <h3>Sancocho trifásico</h3>
+            <p>Caldo sustancioso de carnes y tubérculos, ideal para el clima cálido de valle.</p>
+          </div></div>
+          <div class="card"><div class="content">
+            <h3>Arepa antioqueña</h3>
+            <p>Maíz blanco, asada y crocante, compañera infaltable en mesa paisa.</p>
+          </div></div>
+          <div class="card"><div class="content">
+            <h3>Mazamorra con bocadillo</h3>
+            <p>Tradición dulce a base de maíz pelado y leche.</p>
+          </div></div>
+          <div class="card"><div class="content">
+            <h3>Pescado del río</h3>
+            <p>Preparaciones locales con pescados del Cauca en temporada.</p>
+          </div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="turismo" class="grid grid-2">
+    <div class="card">
+      <div class="content">
+        <span class="kicker">Turismo</span>
+        <h2>Qué hacer en La Pintada</h2>
+        <ul>
+          <li><strong>Balnearios y pozos del río Cauca</strong>: recreación y descanso con precaución en épocas de creciente.</li>
+          <li><strong>Miradores y cerros</strong>: panorámicas de valle y montaña; amaneceres y atardeceres memorables.</li>
+          <li><strong>Deportes y naturaleza</strong>: caminatas, ciclomontañismo, avistamiento de aves.</li>
+          <li><strong>Ruta gastronómica</strong>: ofertas típicas a lo largo de la troncal y en la cabecera.</li>
+          <li><strong>Festividades locales</strong>: celebraciones cívicas y culturales a lo largo del año.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <span class="kicker">Planifica</span>
+        <table>
+          <tr><th>Mejor época</th><td>Temporadas secas (verano). Consultar estado del río.</td></tr>
+          <tr><th>Cómo llegar</th><td>Vía terrestre desde Medellín por la Troncal del Café (Ruta 25).</td></tr>
+          <tr><th>Consejos</th><td>Hidratación, bloqueador, respeto por aforos y zonas seguras en el río.</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="datos" class="grid">
+    <div class="card">
+      <div class="content">
+        <span class="kicker">Datos curiosos</span>
+        <h2>Sabías que…</h2>
+        <ul>
+          <li>Es un punto estratégico que conecta Antioquia con el Eje Cafetero y el Valle del Cauca.</li>
+          <li>Su nombre evoca los <em>colores y contrastes</em> del valle del río Cauca y sus montañas.</li>
+          <li>El paso sobre el Cauca impulsó comercio y servicios para viajeros desde mediados del siglo XX.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria" class="grid">
+    <div class="card">
+      <div class="content">
+        <span class="kicker">Galería</span>
+        <h2>Postales de La Pintada</h2>
+        <p>Reemplaza las imágenes por fotos propias en la carpeta <code>/assets</code> con los mismos nombres de archivo.</p>
+      </div>
+      <div class="gallery">
+        <img src="assets/la-pintada-1.jpg" alt="Río Cauca en La Pintada" />
+        <img src="assets/la-pintada-2.jpg" alt="Paisaje de valle y montaña" />
+        <img src="assets/la-pintada-3.jpg" alt="Vía troncal y gastronomía local" />
+        <img src="assets/la-pintada-4.jpg" alt="Atardecer en el suroeste antioqueño" />
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <h3 style="margin:0 0 8px">Fiesta de la Antioqueñidad INEM 2025 – La Pintada</h3>
+        <p style="margin:0 0 10px">“Trabajo, verraquera y alegría paisa.”</p>
+        <div class="chip">#Antioqueñidad</div>
+        <div class="chip">#LaPintada</div>
+        <div class="chip">#INEM2025</div>
+      </div>
+      <div>
+        <p style="margin:0">Hecho por el equipo INEM · Proyecto educativo sin fines de lucro.</p>
+        <p style="margin:4px 0 0;font-size:12px;opacity:.8">Este micrositio es demostrativo. Verifica información específica (fechas de eventos, restricciones de acceso al río, etc.) antes de viajar.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Suavizado de anclas
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const id=a.getAttribute('href');
+        const el=document.querySelector(id);
+        if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth',block:'start'});} 
+      })
+    })
+  </script>
+</body>
+</html>
